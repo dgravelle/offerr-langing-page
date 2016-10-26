@@ -29,27 +29,34 @@
         display: inline-block;
         margin: $font-margin;
     }
+
+    @include respond-to(sm) {
+        & h1.header__h1--home {
+            font-size: $base-font-size * 2;
+        }
+
+        & p.header__lead {
+            font-size: $base-font-size;
+        }
+    }
 }
-
-
 
 .banner {
     overflow: hidden;
     padding: $font-margin * 2;
+    padding-bottom: $font-margin * 4;
 
     &.bg-primary {
         color: white;
     }
 
-    // .line-thru__container {
-    //     display: inline-block;
-    //     text-align: center;
-    // }
-
     h2.line-thru {
         color: $grey-lightest;
         display: inline-block;
-        padding: 0 $font-margin * 4;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 16px;
+        padding: 0 $font-margin * 3;
         position: relative;
         text-align: center;
         z-index: 0;
@@ -76,18 +83,37 @@
     }
 }
 
-.banner > .swiper-panel {
-    color: white;
-    padding: $font-margin * 4;
-}
-
-
-
-
 section.banner--hiw {
     padding: 0 100px;
 
     & .block--hiw {
         text-align: center;
+    }
+}
+
+@include respond-to(sm) {
+    section.banner--hiw {
+        padding: 0 $font-margin;
+    }
+}
+
+.banner > .swiper-panel {
+    color: white;
+}
+
+
+.banner--slim {
+    @extend .banner;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $grey-lightest;
+
+    & p.banner__p {
+        font-size: $base-font-size;
+    }
+
+    & a.btn-secondary {
+        display: inline-block;
+        margin-top: $font-margin;
     }
 }

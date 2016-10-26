@@ -1,6 +1,16 @@
 .bg-primary {
   background-color: #016699; }
 
+.text-center {
+  text-align: center; }
+
+.blue-accent {
+  color: #016699;
+  font-weight: bold; }
+
+h2.normal {
+  font-weight: normal; }
+
 .navbar--offerr {
   background-color: transparent;
   border: 0;
@@ -32,20 +42,29 @@
   .header.header--home .btn-primary {
     display: inline-block;
     margin: 8px; }
+  @media only screen and (max-width: 768px) {
+    .header.header--home h1.header__h1--home {
+      font-size: 32px; }
+    .header.header--home p.header__lead {
+      font-size: 16px; } }
 
-.banner {
+.banner, .banner--slim {
   overflow: hidden;
-  padding: 16px; }
-  .banner.bg-primary {
+  padding: 16px;
+  padding-bottom: 32px; }
+  .banner.bg-primary, .bg-primary.banner--slim {
     color: white; }
-  .banner h2.line-thru {
+  .banner h2.line-thru, .banner--slim h2.line-thru {
     color: #cccccc;
     display: inline-block;
-    padding: 0 32px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 0 24px;
     position: relative;
     text-align: center;
     z-index: 0; }
-  .banner h2.line-thru:after {
+  .banner h2.line-thru:after, .banner--slim h2.line-thru:after {
     content: "";
     border-top: 1px solid #cccccc;
     position: absolute;
@@ -53,38 +72,49 @@
     left: 0;
     width: 100%;
     z-index: -1; }
-  .banner h2.line-thru span {
+  .banner h2.line-thru span, .banner--slim h2.line-thru span {
     background: white;
     padding: 4px 8px; }
-  .banner.bg-primary h2.line-thru > span {
+  .banner.bg-primary h2.line-thru > span, .bg-primary.banner--slim h2.line-thru > span {
     background-color: #016699;
     padding: 4px 8px; }
-
-.banner > .swiper-panel {
-  color: white;
-  padding: 32px; }
 
 section.banner--hiw {
   padding: 0 100px; }
   section.banner--hiw .block--hiw {
     text-align: center; }
 
+@media only screen and (max-width: 768px) {
+  section.banner--hiw {
+    padding: 0 8px; } }
+
+.banner > .swiper-panel, .banner--slim > .swiper-panel {
+  color: white; }
+
+.banner--slim {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #cccccc; }
+  .banner--slim p.banner__p {
+    font-size: 16px; }
+  .banner--slim a.btn-secondary {
+    display: inline-block;
+    margin-top: 8px; }
+
 a.btn, a.btn-primary,
-button.btn-primary, button.btn {
-  padding: 12px 16px;
-  border-radius: 18px; }
+button.btn-primary, a.btn-secondary,
+button.btn-secondary, button.btn {
+  display: inline-block;
+  border-radius: 18px;
+  font-size: 16px;
+  padding: 12px 16px; }
 
 a.btn-primary,
 button.btn-primary {
-  background-color: #b5e252;
-  font-size: 16px; }
+  background-color: #b5e252; }
 
-.text-center {
-  text-align: center; }
-
-.blue-accent {
-  color: #016699;
-  font-weight: bold; }
-
-h2.normal {
-  font-weight: normal; }
+a.btn-secondary,
+button.btn-secondary {
+  background-color: #016699;
+  color: white;
+  padding: 8px 12px; }
