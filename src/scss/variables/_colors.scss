@@ -6,3 +6,9 @@ $grey-lightest: rgba(204, 204, 204, 1);
 .bg-primary {
     background-color: $secondary-1;
 }
+
+h1.h1-secondary,
+h2.h2-secondary,
+h3.h3-secondary {
+    color: $secondary-1;
+}

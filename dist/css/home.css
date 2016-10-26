@@ -1,6 +1,11 @@
 .bg-primary {
   background-color: #016699; }
 
+h1.h1-secondary,
+h2.h2-secondary,
+h3.h3-secondary {
+  color: #016699; }
+
 .text-center {
   text-align: center; }
 
