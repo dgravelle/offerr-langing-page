@@ -6,6 +6,9 @@
   border: 0;
   border-radius: 0; }
 
+.navbar.navbar-default.navbar--offerr li > a {
+  color: white; }
+
 .header.header--home {
   background: url("../img/home-blue.jpg");
   background-size: cover;
@@ -31,7 +34,8 @@
     margin: 8px; }
 
 .banner {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 16px; }
   .banner.bg-primary {
     color: white; }
   .banner h2.line-thru {
@@ -78,5 +82,9 @@ button.btn-primary {
 .text-center {
   text-align: center; }
 
-.text-center {
-  text-align: center; }
+.blue-accent {
+  color: #016699;
+  font-weight: bold; }
+
+h2.normal {
+  font-weight: normal; }

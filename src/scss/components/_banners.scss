@@ -35,6 +35,7 @@
 
 .banner {
     overflow: hidden;
+    padding: $font-margin * 2;
 
     &.bg-primary {
         color: white;
