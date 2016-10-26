@@ -1,0 +1,82 @@
+.bg-primary {
+  background-color: #016699; }
+
+.navbar--offerr {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0; }
+
+.header.header--home {
+  background: url("../img/home-blue.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  margin-top: -70px;
+  padding-top: 140px; }
+  .header.header--home h1.header__h1--home {
+    color: white;
+    font-size: 48px;
+    margin: 8px; }
+  .header.header--home p.header__lead {
+    color: white;
+    font-size: 20px;
+    margin: 8px; }
+  .header.header--home .header--home__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .header.header--home .btn-primary {
+    display: inline-block;
+    margin: 8px; }
+
+.banner {
+  overflow: hidden; }
+  .banner.bg-primary {
+    color: white; }
+  .banner h2.line-thru {
+    color: #cccccc;
+    display: inline-block;
+    padding: 0 32px;
+    position: relative;
+    text-align: center;
+    z-index: 0; }
+  .banner h2.line-thru:after {
+    content: "";
+    border-top: 1px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: -1; }
+  .banner h2.line-thru span {
+    background: white;
+    padding: 4px 8px; }
+  .banner.bg-primary h2.line-thru > span {
+    background-color: #016699;
+    padding: 4px 8px; }
+
+.banner > .swiper-panel {
+  color: white;
+  padding: 32px; }
+
+section.banner--hiw {
+  padding: 0 100px; }
+  section.banner--hiw .block--hiw {
+    text-align: center; }
+
+a.btn, a.btn-primary,
+button.btn-primary, button.btn {
+  padding: 12px 16px;
+  border-radius: 18px; }
+
+a.btn-primary,
+button.btn-primary {
+  background-color: #b5e252;
+  font-size: 16px; }
+
+.text-center {
+  text-align: center; }
+
+.text-center {
+  text-align: center; }

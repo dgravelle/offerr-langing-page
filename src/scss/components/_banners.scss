@@ -1,0 +1,92 @@
+.header.header--home {
+    background: url('../img/home-blue.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    margin-top: -70px;
+    padding-top: 140px;
+
+    & h1.header__h1--home {
+        color: white;
+        font-size: $base-font-size * 3;
+        margin: $font-margin;
+    }
+
+    & p.header__lead {
+        color: white;
+        font-size: $base-font-size * 1.25;
+        margin: $font-margin;
+    }
+
+    & .header--home__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    & .btn-primary {
+        display: inline-block;
+        margin: $font-margin;
+    }
+}
+
+
+
+.banner {
+    overflow: hidden;
+
+    &.bg-primary {
+        color: white;
+    }
+
+    // .line-thru__container {
+    //     display: inline-block;
+    //     text-align: center;
+    // }
+
+    h2.line-thru {
+        color: $grey-lightest;
+        display: inline-block;
+        padding: 0 $font-margin * 4;
+        position: relative;
+        text-align: center;
+        z-index: 0;
+    }
+
+    h2.line-thru:after {
+        content: "";
+        border-top: 1px solid $grey-lightest;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    h2.line-thru span {
+        background: white;
+        padding: 4px 8px;
+    }
+
+    &.bg-primary h2.line-thru > span {
+        background-color: $secondary-1;
+        padding: 4px 8px;
+    }
+}
+
+.banner > .swiper-panel {
+    color: white;
+    padding: $font-margin * 4;
+}
+
+
+
+
+section.banner--hiw {
+    padding: 0 100px;
+
+    & .block--hiw {
+        text-align: center;
+    }
+}

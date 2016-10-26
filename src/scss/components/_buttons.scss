@@ -1,0 +1,11 @@
+a.btn, button.btn {
+    padding: 12px 16px;
+    border-radius: 18px;
+}
+
+a.btn-primary,
+button.btn-primary {
+    @extend a.btn;
+    background-color: $primary-1;
+    font-size: $base-font-size;
+}
