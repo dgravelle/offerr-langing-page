@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran");
 .bg-primary {
   background-color: #016699; }
 
@@ -10,7 +11,12 @@ h3.h3-secondary {
   color: #016699; }
 
 html, body {
-  color: #6e6e6e; }
+  color: #6e6e6e;
+  font-family: "Catamaran", sans-serif; }
+
+h1, h2, h3, h4, h5, h6,
+p, li, a, blockquote {
+  font-family: "Catamaran", sans-serif; }
 
 .text-center {
   text-align: center; }
@@ -52,7 +58,7 @@ h2.normal {
   background: url("../img/home-blue.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 600px;
   margin-top: -70px;
   padding-top: 140px; }
   .header.header--home h1.header__h1--home {
@@ -143,6 +149,13 @@ section.banner--hiw {
     .banner--slim a.btn-secondary {
       margin-left: 0; } }
 
+.banner--wave {
+  background: url("../img/wave.png");
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+  margin-top: -100px; }
+
 a.btn, a.btn-primary,
 button.btn-primary, a.btn-secondary,
 button.btn-secondary, button.btn {
@@ -184,8 +197,10 @@ button.btn-secondary {
 .form-submit__input {
   box-sizing: border-box;
   border: 1px solid #6e6e6e;
-  padding: 16px;
   border-radius: 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  padding: 16px;
   transition: border ease 0.35s;
   min-width: 300px;
   z-index: 0; }
@@ -204,8 +219,8 @@ button.btn-secondary {
   margin-left: -100px;
   padding-top: 14px;
   padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 18px;
+  padding-left: 22px;
+  padding-right: 22px;
   transition: all ease 0.35s;
   z-index: -1; }
 

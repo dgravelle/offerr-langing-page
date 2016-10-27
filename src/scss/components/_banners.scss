@@ -2,7 +2,7 @@
     background: url('../img/home-blue.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 500px;
+    min-height: 600px;
     margin-top: -70px;
     padding-top: 140px;
 
@@ -138,4 +138,12 @@ section.banner--hiw {
             margin-left: 0;
         }
     }
+}
+
+.banner--wave {
+    background: url('../img/wave.png');
+    background-position: center;
+    background-size: cover;
+    height: 120px;
+    margin-top: -100px;
 }
