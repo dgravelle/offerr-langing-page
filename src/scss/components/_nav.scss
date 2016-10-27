@@ -2,6 +2,7 @@
     background-color: transparent;
     border: 0;
     border-radius: 0;
+    padding-top: $base-margin;
 
     & #navbar--main {
         border: 0;
@@ -22,8 +23,26 @@
     }
 }
 
-.navbar.navbar-default.navbar--offerr li > a {
-    color: white;
+.navbar.navbar-default.navbar--offerr li {
+    border-radius: $base-margin;
+    display: inline;
+    padding: $base-margin;
+    transition: background-color ease 0.5s;
+
+    &:hover {
+        background-color: white;
+
+    }
+
+    & > a {
+        display: inline;
+        color: white;
+        transition: color ease 0.5s;
+    }
+
+    &:hover a {
+        color: $secondary-1;
+    }
 }
 
 .navbar--offerr .navbar--offerr__logo {
