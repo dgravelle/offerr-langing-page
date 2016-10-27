@@ -1,0 +1,46 @@
+// .form-submit-wrapper {
+//     display: inline-block;
+//     border-radius: 18px;
+//     border: 1px solid $grey;
+// }
+
+.form-submit__input {
+    box-sizing: border-box;
+    border: 1px solid $grey;
+    padding: 16px;
+    border-radius: $base-margin * 2;
+    transition: border ease 0.35s;
+    min-width: 300px;
+    z-index: 0;
+
+    &:focus {
+        outline: none;
+        border-color: rgba(81, 203, 238, 1);
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    }
+}
+
+
+.form-submit__button {
+    background: transparent;
+    border: 0;
+    border-left: 1px solid $grey;
+    border-radius: 0 16px 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: -100px;
+    padding-top: ($base-margin * 2) - 2;
+    padding-bottom: $base-margin * 2;
+    padding-left: $base-margin * 2;
+    padding-right: ($base-margin * 2) + 2;
+    transition: all ease 0.35s;
+    z-index: -1;
+}
+
+.form-submit__button:hover {
+    color: white;
+    background: $secondary-1;
+    // padding-top: ($base-margin * 2) - 2;
+    // padding-bottom: $base-margin * 2;
+
+}

@@ -1,7 +1,10 @@
 @import "./variables/colors.scss";
 @import "./variables/fonts.scss";
+@import "./theme/theme.scss";
 @import "./helpers/helpers.scss";
 @import "./helpers/breakpoints.scss";
-@import "./layout/nav.scss";
+@import "./components/nav.scss";
 @import "./components/banners.scss";
 @import "./components/buttons.scss";
+@import "./components/swiper.scss";
+@import "./components/form.scss";
