@@ -5,15 +5,40 @@
     <title>Offerr | Home</title>
 
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <style>
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        </style>
 </head>
 <body>
 
         <nav class="navbar navbar-default navbar--offerr" role="navigation">
           <div class="container-fluid">
 
-                  <a class="navbar-brand navbar--offerr__logo" href="#">
-                      <img src="img/White_Offerr_logo_nav.png" alt="" class="img-responsive">
+                  <a class="navbar--offerr__logo" href="#">
+                      <img src="img/White_Offerr_logo_nav.png" alt="" class="navbar--offerr__img">
                   </a>
             <div class="navbar-header">
               <button data-toggle="collapse" data-target="#navbar--main" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="nav-bar-brand"></a>
@@ -62,21 +87,21 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="block--hiw text-center">
-                            <img src="https://placehold.it/128x128" alt="" class="block--hiw__img">
+                            <img src="img/magnifying-glass.png" alt="" class="block--hiw__img img-responsive">
                             <h3 class="block--hiw">Find Your Home</h3>
                             <p class="block--hiw__p">Whether you have an agent or your looking on your own Offerr can help you!</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="block--hiw text-center">
-                            <img src="https://placehold.it/128x128" alt="" class="block--hiw__img">
+                            <img src="img/document.png" alt="" class="block--hiw__img img-responsive">
                             <h3 class="block--hiw">Complete Your Offerr</h3>
                             <p class="block--hiw__p">Once you've found your dream home you can complete an Offerr in minutes.</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="block--hiw text-center">
-                            <img src="https://placehold.it/128x128" alt="" class="block--hiw__img">
+                            <img src="img/keys.png" alt="" class="block--hiw__img img-responsive">
                             <h3 class="block--hiw">Get The Keys</h3>
                             <p class="block--hiw__p">All contracts from Offerr are checked and backed by our Real Estate professionals too.</p>
                         </div>
@@ -109,13 +134,43 @@
                         </span>
                     </h2>
                 </div>
-                <div class="swiper-panel">
-                    <div class="text-center">
-                        <blockquote class="swiper-panel__blockquote">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam volutpat velit eget nisi ef citur.
-                        </blockquote>
-                        <p class="swipper-panel__p">John Doe, Pennyslvania</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-panel">
+                                <div class="text-center">
+                                    <blockquote class="swiper-panel__blockquote">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam volutpat velit eget nisi ef citur.
+                                    </blockquote>
+                                    <p class="swipper-panel__p">John Doe, Pennyslvania</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-panel">
+                                <div class="text-center">
+                                    <blockquote class="swiper-panel__blockquote">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam volutpat velit eget nisi ef citur.
+                                    </blockquote>
+                                    <p class="swipper-panel__p">John Doe, Pennyslvania</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-panel">
+                                <div class="text-center">
+                                    <blockquote class="swiper-panel__blockquote">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nullam volutpat velit eget nisi ef citur.
+                                    </blockquote>
+                                    <p class="swipper-panel__p">John Doe, Pennyslvania</p>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <section class="banner">
@@ -136,7 +191,7 @@
                     <p class="banner__p"><strong>Are you a Real Estate Professional?</strong>
                         <br class="visible-xs">
                          Learn how Offerr can help your business grow today</p>
-                    <a href="#for-business" class="btn btn-secondary">Learn More <span class="sr-only">about how Offerr can help your business</span></a>
+                    <a href="#for-business" class="btn btn-secondary ">Learn More <span class="sr-only">about how Offerr can help your business</span></a>
                 </div>
             </section>
         </main>
@@ -153,7 +208,14 @@
 
         </footer>
 
-
-
+    <script src="js/vendor/jquery-1.11.3.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        });
+    </script>
 </body>
 </html>

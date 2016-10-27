@@ -20,9 +20,27 @@ h2.normal {
   background-color: transparent;
   border: 0;
   border-radius: 0; }
+  .navbar--offerr #navbar--main {
+    border: 0; }
+  .navbar--offerr .navbar-toggle span.icon-bar {
+    background-color: white; }
+
+@media only screen and (max-width: 768px) {
+  .navbar--offerr {
+    background-color: #016699; }
+    .navbar--offerr ul.nav.navbar-nav {
+      text-align: center; } }
 
 .navbar.navbar-default.navbar--offerr li > a {
   color: white; }
+
+.navbar--offerr .navbar--offerr__logo {
+  float: left;
+  height: 0; }
+
+@media only screen and (max-width: 768px) {
+  .navbar--offerr .navbar--offerr__logo img.navbar--offerr__img {
+    height: 44px; } }
 
 .header.header--home {
   background: url("../img/home-blue.jpg");
@@ -55,8 +73,7 @@ h2.normal {
 
 .banner, .banner--slim {
   overflow: hidden;
-  padding: 16px;
-  padding-bottom: 32px; }
+  padding: 32px 0; }
   .banner.bg-primary, .bg-primary.banner--slim {
     color: white; }
   .banner h2.line-thru, .banner--slim h2.line-thru {
@@ -85,26 +102,36 @@ h2.normal {
     padding: 4px 8px; }
 
 section.banner--hiw {
-  padding: 0 100px; }
+  padding-left: 100px;
+  padding-right: 100px; }
   section.banner--hiw .block--hiw {
     text-align: center; }
+  section.banner--hiw .block--hiw__img {
+    display: block;
+    min-height: 170px;
+    margin: 0 auto; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1028px) {
   section.banner--hiw {
-    padding: 0 8px; } }
+    padding-left: 8px;
+    padding-right: 8px; } }
 
-.banner > .swiper-panel, .banner--slim > .swiper-panel {
-  color: white; }
+.swiper-panel {
+  color: white;
+  margin-bottom: 32px; }
 
 .banner--slim {
   padding-left: 0;
   padding-right: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: #cccccc; }
   .banner--slim p.banner__p {
+    display: inline;
     font-size: 16px; }
   .banner--slim a.btn-secondary {
-    display: inline-block;
-    margin-top: 8px; }
+    margin-left: 24px;
+    font-size: 14px; }
 
 a.btn, a.btn-primary,
 button.btn-primary, a.btn-secondary,

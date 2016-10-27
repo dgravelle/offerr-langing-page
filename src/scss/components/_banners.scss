@@ -1,3 +1,5 @@
+$base-margin: 8px;
+
 .header.header--home {
     background: url('../img/home-blue.jpg');
     background-size: cover;
@@ -9,13 +11,13 @@
     & h1.header__h1--home {
         color: white;
         font-size: $base-font-size * 3;
-        margin: $font-margin;
+        margin: $base-margin;
     }
 
     & p.header__lead {
         color: white;
         font-size: $base-font-size * 1.25;
-        margin: $font-margin;
+        margin: $base-margin;
     }
 
     & .header--home__content {
@@ -27,7 +29,7 @@
 
     & .btn-primary {
         display: inline-block;
-        margin: $font-margin;
+        margin: $base-margin;
     }
 
     @include respond-to(sm) {
@@ -43,8 +45,7 @@
 
 .banner {
     overflow: hidden;
-    padding: $font-margin * 2;
-    padding-bottom: $font-margin * 4;
+    padding: $base-margin * 4 0;
 
     &.bg-primary {
         color: white;
@@ -56,7 +57,7 @@
         font-weight: normal;
         margin-top: 0;
         margin-bottom: 16px;
-        padding: 0 $font-margin * 3;
+        padding: 0 $base-margin * 3;
         position: relative;
         text-align: center;
         z-index: 0;
@@ -84,21 +85,30 @@
 }
 
 section.banner--hiw {
-    padding: 0 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     & .block--hiw {
         text-align: center;
     }
-}
 
-@include respond-to(sm) {
-    section.banner--hiw {
-        padding: 0 $font-margin;
+    & .block--hiw__img {
+        display: block;
+        min-height: 170px;
+        margin: 0 auto;
     }
 }
 
-.banner > .swiper-panel {
+@include respond-to(md) {
+    section.banner--hiw {
+        padding-left: $base-margin;
+        padding-right: $base-margin;
+    }
+}
+
+.swiper-panel {
     color: white;
+    margin-bottom: $base-margin * 4;
 }
 
 
@@ -106,14 +116,20 @@ section.banner--hiw {
     @extend .banner;
     padding-left: 0;
     padding-right: 0;
+    padding-top: $base-margin * 3;
+    padding-bottom: $base-margin * 3;
     background-color: $grey-lightest;
 
     & p.banner__p {
+        display: inline;
         font-size: $base-font-size;
     }
 
     & a.btn-secondary {
-        display: inline-block;
-        margin-top: $font-margin;
+        // display: inline-block;
+        // margin-top: $base-margin;
+        margin-left: $base-margin * 3;
+        font-size: 14px;
+
     }
 }
