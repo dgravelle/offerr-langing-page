@@ -13,7 +13,7 @@
     }
 }
 
-@include respond-to(sm) {
+@include respond-to(md) {
     .navbar--offerr {
         background-color: $secondary-1;
 
@@ -67,7 +67,7 @@
     height: 0;
 }
 
-@include respond-to(sm) {
+@include respond-to(md) {
     .navbar--offerr .navbar--offerr__logo img.navbar--offerr__img {
             height: 44px;
     }

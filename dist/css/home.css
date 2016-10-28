@@ -28,6 +28,16 @@ p, li, a, blockquote {
 h2.normal {
   font-weight: normal; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+  .navbar-header .collapse, .navbar-toggle {
+    display: block !important; }
+  .navbar-header {
+    float: none; } }
+
 .navbar--offerr {
   background-color: transparent;
   border: 0;
@@ -38,7 +48,7 @@ h2.normal {
   .navbar--offerr .navbar-toggle span.icon-bar {
     background-color: white; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1028px) {
   .navbar--offerr {
     background-color: #016699; }
     .navbar--offerr ul.nav.navbar-nav {
@@ -73,7 +83,7 @@ h2.normal {
   float: left;
   height: 0; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1028px) {
   .navbar--offerr .navbar--offerr__logo img.navbar--offerr__img {
     height: 44px; } }
 
